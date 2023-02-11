@@ -17,6 +17,8 @@
 
 #   print("Thing to show on screen")
 # Hint: this requires some use of functions, as were discussed previously on this blog and elsewhere on the Internet, like this TutorialsPoint link.
+import time
+start_time = time.time()
 
 def rows():
     return " --- \n"
@@ -50,3 +52,5 @@ def draw_a_game_board():
       return((square_rows() + rows()) + ((user_sq_num-1)*(square_columns() + columns() + square_rows() + rows())))
     
 print(draw_a_game_board())
+
+print("--- %s seconds ---" % (time.time() - start_time))
